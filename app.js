@@ -2,12 +2,6 @@ console.log("Script app.js cargando");
 
 const API_URL = 'https://api.gameofthronesquotes.xyz/v1/random';
 
-function fetchQuote(){
-    console.log("Intentando obtener una cita...");
-
-    
-}
-
 function fetchQuote() {
     console.log("Intentando obtener una cita..."); 
 
