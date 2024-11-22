@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
     const app = document.getElementById('app');
 
-    // URL de la API a consumir
-    const API_URL = 'https://example.com/api/mensajes';
+    
+    const API_URL = 'https://api.gameofthronesquotes.xyz/v1/random';
 
-    // Consumir la API con fetch
+    
     fetch(API_URL)
         .then(response => {
             if (!response.ok) {
@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
             return response.json();
         })
         .then(data => {
-            // Procesar y mostrar los datos
             data.forEach(mensaje => {
                 const mensajeDiv = document.createElement('div');
                 mensajeDiv.textContent = mensaje.texto;
